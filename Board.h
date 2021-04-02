@@ -22,7 +22,7 @@ public:
 		{  0,  2,  0,  2,  0,  2,  0,  2 } };
 
 	// variables that depending on whose turn initializes to the players and opponents values
-	int playerPiece = 0, playerKing = 0, opposingPiece = 0, opposingKing = 0, pickedPiece = 0;
+	int playerPiece = 2, playerKing = 3, opposingPiece = -2, opposingKing = -3, pickedPiece = 0;
 
 	// constant variables determine moveset
 	const static int moveUp = -1, moveDown = 1, moveRight = 1, moveLeft = -1;
