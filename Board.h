@@ -22,7 +22,7 @@ public:
 		{  0,  2,  0,  2,  0,  2,  0,  2 } };
 
 	// variables that depending on whose turn initializes to the players and opponents values
-	int playerPiece, playerKing, opposingPiece, opposingKing, pickedPiece;
+	int playerPiece = 0, playerKing = 0, opposingPiece = 0, opposingKing = 0, pickedPiece = 0;
 
 	// constant variables determine moveset
 	const static int moveUp = -1, moveDown = 1, moveRight = 1, moveLeft = -1;
@@ -31,7 +31,7 @@ public:
 	//Method to print out board replacing numerical values as characters.
 	void printBoard() {
 		int x, y;
-		char c;
+		char c = 0;
 		cout << "X |" << setfill('_') << setw(39) << "|" << endl;
 		for (x = 0; x < 8; x++) {
 			cout << x + 1 << " ";
@@ -133,7 +133,7 @@ public:
 	void PlayerMove(Player movingPlayer, Player opposingPlayer, int x, int y, int pickedPiece) {
 		char c;
 		int leaps = 0;
-		int moveUpOrDown, leapUpOrDown, moveLeftOrRight, leapLeftOrRight;
+		int moveUpOrDown = 0, leapUpOrDown = 0, moveLeftOrRight = 0, leapLeftOrRight = 0;
 
 	Move:
 		//determines which direction a regular piece goes moves or leaps depending on who it belongs too
